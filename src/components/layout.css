@@ -13,7 +13,9 @@
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,7 +27,8 @@ body {
   background: var(--mainWhite);
   line-height: 1.4;
   font-size: 1rem;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  width: 100%;
 }
 h1,
 h2,
@@ -42,6 +45,10 @@ p {
 }
 a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
 }
 .defaultHero {
   min-height: calc(100vh - 62px);
