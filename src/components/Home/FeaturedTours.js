@@ -14,7 +14,7 @@ query {
         price
         slug
         country
-        id: contentful_id
+        contentful_id
         days
         images{
           fluid {

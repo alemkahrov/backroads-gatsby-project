@@ -18,7 +18,7 @@ export const Tour = ({ tour }) => {
         <div className={styles.info}>
           <h4 className={styles.country}>
             <FaMap className={styles.icon} />
-            {country}
+            {country || "default country"}
           </h4>
           <div className={styles.details}>
             <h6>{days} days</h6>
