@@ -1,15 +1,15 @@
 import React from 'react'
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import BlogList from "../components/Blog/BlogList"
 
 export const blog = ({ data }) => {
 
   return (
     <Layout>
       <StyledHero img={data.blogBG.childImageSharp.fluid} />
-      <Link to="/">Back home</Link>
+      <BlogList />
     </Layout>
   )
 }

@@ -41,8 +41,9 @@
 .template h4 {
   text-transform: capitalize;
 }
-.template h2 {
+.template h3 {
   margin: 2rem 0;
+  text-transform: capitalize;
 }
 .journey {
   margin: 3rem 0;
